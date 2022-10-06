@@ -17,7 +17,8 @@ export class RegisterComponent implements OnInit {
   maxDate: Date;
   validationErrors: string[] = [];
 
-  constructor(private accountService: AccountService, private fb: FormBuilder, private router: Router) { }
+  constructor(private accountService: AccountService, private fb: FormBuilder, private router: Router, 
+    private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.initializeForm();
@@ -49,11 +50,23 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
-   this.accountService.register(this.registerForm.value).subscribe(reponse => {
-    this.router.navigateByUrl('/members');
-   }, error => {
-    this.validationErrors = error;
-   })
+    if(this.passwordIsValid()){
+      this.accountService.register(this.registerForm.value).subscribe(reponse => {
+        this.router.navigateByUrl('/members');
+      }, error => {
+        this.validationErrors = error;
+      })
+    }else{
+      this.toastr.error("The password need lowercase, uppercase and digits!");
+    }
+  }
+
+  private passwordIsValid(): boolean{
+    let hasNumber = /\d/.test(this.registerForm.controls.password.value);
+    let hasUpper = /[A-Z]/.test(this.registerForm.controls.password.value);
+    let hasLower = /[a-z]/.test(this.registerForm.controls.password.value);
+
+    return hasNumber && hasUpper && hasLower;
   }
 
   cancel(){

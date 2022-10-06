@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ybpKzTgHQiJKJvJFlhl72DmEWLz79FDIInmxiXEz04Y=",
+  "Hash": "Oqg0htYQzW7Uqn6z9pORjgCOTwKpHtciD6oz4SVzjrc=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -170,12 +170,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ndhondt\\Documents\\Udemy course\\DatingApp\\API\\wwwroot\\main.b30b49b1e705609f.js",
+      "Identity": "C:\\Users\\ndhondt\\Documents\\Udemy course\\DatingApp\\API\\wwwroot\\main.ff412b622d039b2f.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ndhondt\\Documents\\Udemy course\\DatingApp\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "main.b30b49b1e705609f.js",
+      "RelativePath": "main.ff412b622d039b2f.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,7 +184,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.b30b49b1e705609f.js"
+      "OriginalItemSpec": "wwwroot\\main.ff412b622d039b2f.js"
     },
     {
       "Identity": "C:\\Users\\ndhondt\\Documents\\Udemy course\\DatingApp\\API\\wwwroot\\polyfills.e767345087e24e9b.js",
